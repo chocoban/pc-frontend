@@ -1,0 +1,25 @@
+{
+  "name": "pettycash_next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chocoban/pc-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chocoban/pc-frontend/issues"
+  },
+  "homepage": "https://github.com/chocoban/pc-frontend#readme",
+  "dependencies": {
+    "next": "^9.0.6",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
