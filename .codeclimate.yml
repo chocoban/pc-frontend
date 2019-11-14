@@ -1,6 +1,14 @@
 exclude_patterns:
 - "__tests__/"
 - "next.config.js"
+- "**/node_modules/"
+- "**/test/"
+- "**/__tests__/"
+- "**/tests/"
+- "/jest.config/"
+- "/**/__mocks__/"
+- "scripts/"
+- "cypress/"
 version: "2"
 checks:
   similar-code:

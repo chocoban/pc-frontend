@@ -1,14 +1,20 @@
-module.exports = {
-  setupFiles: ['<rootDir>/jest.setup.js'],
-  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
+module.exports= {
+  setupFiles: ["<rootDir>/jest.setup.js"],
+  testPathIgnorePatterns: ["<rootDir>/.next/", "<rootDir>/node_modules/"],
   collectCoverage: true,
   moduleFileExtensions: [
     "jsx",
     "js"
   ],
+  collectCoverageFrom: [
+    "pages/**/*.{js,jsx,mjs}",
+    "components/**/*.{js,jsx,mjs}"
+  ],
+  testEnvironment: "node",
   testMatch: [
-    "<rootDir>/__tests__/**/*.js",
-    "<rootDir>/__tests__/**/?(*.)(test).js"
+    "<rootDir>/__tests__/**/*.js?(x)", 
+    "<rootDir>/__tests__/**/?(*.)(spec|test).{js,jsx,mjs}",
+    "**/__tests__/*.test.js?(x)",
   ],
   coveragePathIgnorePatterns: [
     "/node_modules/"

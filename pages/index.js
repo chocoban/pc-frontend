@@ -1,16 +1,11 @@
-import { Component } from 'react';
-import LandingPage from '../components/Landing/Landing';
-// import "../styles/index.scss";
+import { connect } from 'react-redux';
+import LandingPage from '../container/LandingPage';
 
-class Index extends Component{
-  render(){
-    return (
-      <div>
-        <LandingPage />
-      </div>
-    )
-  }
+const Index = () => (
+  <div>
+    <LandingPage />
+  </div>
+);
+const mapStateToProps = state => state;
 
-}
-
-export default Index;
+export default connect(mapStateToProps)(Index);
