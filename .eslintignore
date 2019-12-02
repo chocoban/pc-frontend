@@ -1,0 +1,9 @@
+
+build/
+node_modules/
+.next/
+jest.config
+cypress/
+
+
+
