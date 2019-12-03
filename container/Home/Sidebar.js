@@ -10,13 +10,17 @@ class HomeSidebar extends Component{
   state = {
     collapsed: false,
   };
-  
+
   onCollapse = collapsed => {
     this.setState({ collapsed });
   };
   render(){
     return (
-      <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
+      <Sider collapsible
+        collapsed={this.state.collapsed}
+        onCollapse={this.onCollapse}
+        className='side_bar'
+      >
         <div className="logo" />
         <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
           <Menu.Item key="1">
@@ -50,6 +54,5 @@ class HomeSidebar extends Component{
 }
 
 const mapStateToProps = state => state;
-
 
 export default connect(mapStateToProps)(HomeSidebar);

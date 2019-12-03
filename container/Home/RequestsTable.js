@@ -47,24 +47,24 @@ class RequestsTable extends Component {
     return (
       <Fragment>
         <HomeHeader />
-        < ModalForm 
+        <ModalForm
           title="Title"
           visible={visible}
         >
-        </ModalForm> 
-        <Table 
+        </ModalForm>
+        <Table
           columns={columns}
           rowKey={record => record.login.uuid}
           dataSource={this.state.data}
           pagination={this.state.pagination}
           loading={this.state.loading}
           onChange={this.handleTableChange}
-        /> 
+        />
       </Fragment>
     )
   }
 }
 
-const mapStateToProps = ({ modalReducer }) => modalReducer 
+const mapStateToProps = ({ modalReducer }) => ({ ...modalReducer });
 
 export default connect(mapStateToProps)(RequestsTable);
