@@ -1,0 +1,11 @@
+
+build/
+node_modules/
+.next/
+jest.config
+next.config
+cypress/
+__mocks__/
+
+
+
