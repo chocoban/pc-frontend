@@ -6,15 +6,9 @@ module.exports= {
     "jsx",
     "js"
   ],
-  collectCoverageFrom: [
-    "pages/**/*.{js,jsx,mjs}",
-    "components/**/*.{js,jsx,mjs}"
-  ],
   testEnvironment: "node",
   testMatch: [
-    "<rootDir>/__tests__/**/*.js?(x)", 
-    "<rootDir>/__tests__/**/?(*.)(spec|test).{js,jsx,mjs}",
-    "**/__tests__/*.test.js?(x)",
+    "**/__tests__/**/*.js?(x)"
   ],
   coveragePathIgnorePatterns: [
     "/node_modules/"

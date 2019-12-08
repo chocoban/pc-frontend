@@ -40,7 +40,7 @@
     "consistent-return": 0,
     "comma-dangle": 0,
     "no-fallthrough": 0,
-    "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+    "no-unused-vars": 0,
     "no-trailing-spaces": ["error", { "skipBlankLines": true, "ignoreComments": true }],
     "eol-last": ["error", "always"],
     "function-paren-newline": ["error", "consistent"]

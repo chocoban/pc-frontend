@@ -5,18 +5,7 @@ import { closeModal } from '../../redux/actions';
 
 class ModalForm extends Component {
 
-  handleOk = () => {
-    this.setState({
-      ModalText: 'The modal will be closed after two seconds',
-      confirmLoading: true,
-    });
-    setTimeout(() => {
-      this.setState({
-        visible: false,
-        confirmLoading: false,
-      });
-    }, 2000);
-  };
+  handleOk = () => {};
 
   render() {
     const { visible, closeModal } = this.props;

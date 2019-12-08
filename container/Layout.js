@@ -7,14 +7,6 @@ import RequestsTable from './Home/RequestsTable';
 const { Content, Footer } = Layout;
 
 class ConnectedLayout extends Component {
-  state = { 
-    collapsed: false 
-  };
-
-  onCollapse = (collapsed) => {
-    this.setState({ collapsed });
-  }; 
-  
   render() {
     return (
       <Layout style={{ minHeight: '100vh' }}>

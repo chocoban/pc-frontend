@@ -1,10 +1,14 @@
 import reducers from '..';
 
-
 describe('reducers', () => {
-  it('reducers', () => {
+  it('initial state', () => {
     let state;
     state = reducers(undefined, {});
-    expect(state).toEqual({modalReducer:{visible:false,error:[]}});
+    expect(state).toEqual({
+      modalReducer: {
+        visible: false,
+        error: []
+      }
+    });
   });
 })
