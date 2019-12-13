@@ -1,7 +1,9 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { PageHeader, Button, Descriptions } from 'antd';
+import {
+  PageHeader, Button, Descriptions
+} from 'antd';
 import { openModal } from '../../redux/actions';
 
 class HomeHeader extends Component {
@@ -40,14 +42,10 @@ class HomeHeader extends Component {
   }
 }
 
-HomeHeader.propTypes = {
-  openModal: PropTypes.func
-};
+HomeHeader.propTypes = { openModal: PropTypes.func };
 
 const mapStateToProps = state => state;
 
-const actions = {
-  openModal
-};
+const actions = { openModal };
 
 export default connect(mapStateToProps, actions)(HomeHeader);

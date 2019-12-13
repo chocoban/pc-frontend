@@ -1,11 +1,11 @@
 {
+  "extends": ["airbnb-base", "eslint:recommended"],
   "parser": "babel-eslint",
   "env": {
     "node": true,
     "es6": true,
     "jest": true
   },
-  "extends": "airbnb-base",
   "plugins": ["promise"],
   "parserOptions": {
     "esversion": 6,
@@ -43,6 +43,13 @@
     "no-unused-vars": 0,
     "no-trailing-spaces": ["error", { "skipBlankLines": true, "ignoreComments": true }],
     "eol-last": ["error", "always"],
-    "function-paren-newline": ["error", "consistent"]
+    "function-paren-newline": ["error", "consistent"],
+    "object-curly-newline": ["error", {
+      "ObjectExpression": { "multiline": true },
+      "ObjectPattern": { "multiline": true, "minProperties": 2  },
+      "ImportDeclaration": { "multiline": true, "minProperties": 3 },
+      "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+    }],
+    "arrow-parens": [2, "as-needed"]
   }
 }
