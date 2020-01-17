@@ -2,8 +2,8 @@
 build/
 node_modules/
 .next/
-jest.config
-next.config
+jest.config.js
+next.config.js
 cypress/
 __mocks__/
 

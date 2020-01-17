@@ -1,16 +1,15 @@
 import { Component } from 'react';
 import { connect } from 'react-redux';
-import RequestsLayout from '../container/Layout';
+import RequestsView from '../container/Home/RequestsTable';
+import ConnectedLayout from '../container/Layout';
 
-class Requests extends Component {
-  render() {
-    return (
-      <div>
-        <RequestsLayout />
-      </div>
-    );
-  }
-}
+const Requests = () => (
+  <div>
+    <ConnectedLayout>
+      <RequestsView />
+    </ConnectedLayout>
+  </div>
+);
 
 const mapStateToProps = state => state;
 

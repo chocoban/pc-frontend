@@ -3,9 +3,7 @@ import { connect } from 'react-redux';
 import { Button } from 'antd';
 
 class SignUpPage extends Component {
-  state = {
-    size: 'large',
-  };
+  state = { size: 'large', };
 
   handleSizeChange = e => {
     this.setState({ size: e.target.value });
@@ -19,9 +17,14 @@ class SignUpPage extends Component {
         minHeight: '100vh',
         backgroundImage: 'url(../public/static/landingPage/what-is-petty-cash.png)',
         backgroundSize: 'cover'
-        }}>
-        <div style={{ marginLeft:'25vw', paddingTop:'35vw' }}>
-          <Button type="primary" shape="round" size={ size } style={{ width:'10vw', height:'3vw' }}>
+      }}>
+        <div style={{ marginLeft: '25vw', paddingTop: '35vw' }}>
+          <Button
+            type='primary'
+            shape='round'
+            size={ size }
+            style={{ width: '10vw', height: '3vw' }}
+          >
             <a href='http://localhost:8080/google'>
               Sign up
             </a>

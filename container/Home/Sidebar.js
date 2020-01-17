@@ -1,20 +1,20 @@
 import { Component } from 'react';
-import { connect } from "react-redux";
-import { Layout, Menu, Icon } from 'antd';
+import { connect } from 'react-redux';
+import {
+  Layout, Menu, Icon
+} from 'antd';
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
 
-class HomeSidebar extends Component{
-
-  state = {
-    collapsed: false,
-  };
+class HomeSidebar extends Component {
+  state = { collapsed: false, };
 
   onCollapse = collapsed => {
     this.setState({ collapsed });
   };
-  render(){
+
+  render() {
     return (
       <Sider collapsible
         collapsed={this.state.collapsed}

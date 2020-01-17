@@ -2,18 +2,20 @@ import { Component } from 'react';
 import { connect } from 'react-redux';
 import { Layout } from 'antd';
 import HomeSidebar from './Home/Sidebar';
-import RequestsTable from './Home/RequestsTable';
 
-const { Content, Footer } = Layout;
+const {
+  Content, Footer
+} = Layout;
 
 class ConnectedLayout extends Component {
   render() {
+    const { children } = this.props;
     return (
       <Layout style={{ minHeight: '100vh' }}>
         <HomeSidebar />
         <Layout>
           <Content style={{ margin: '0 16px' }}>
-            <RequestsTable />
+            { children }
           </Content>
           <Footer style={{ textAlign: 'center' }}> ©2019 Created by pettyCash</Footer>
         </Layout>
